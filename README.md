@@ -4,7 +4,7 @@ This URL Shortener service allow user to register, login, shorten URL and redire
 
 ## Deployment Link
 
-https://url-shortener-5p7p.onrender.com
+https://url-shortener-jxrw.onrender.com/
 
 
 ## Tech Stack
@@ -12,16 +12,17 @@ https://url-shortener-5p7p.onrender.com
 * Node.js
 * Express.js
 * MongoDB
+* swagger
 
 ## Documentation
 
-https://url-shortener-5p7p.onrender.com/apidocs/
+https://url-shortener-jxrw.onrender.com/apidocs/
 
 ## Endpoints
 
 1. For signup
 
-    Endpoint - https://url-shortener-5p7p.onrender.com/user/signup
+    Endpoint - https://url-shortener-jxrw.onrender.com/user/signup
    
     Method - POST
 
@@ -36,7 +37,7 @@ https://url-shortener-5p7p.onrender.com/apidocs/
 
 2. For Login
 
-    Endpoint - https://url-shortener-5p7p.onrender.com/user/login
+    Endpoint - https://url-shortener-jxrw.onrender.com/user/login
    
     Method - POST
 
@@ -51,7 +52,7 @@ https://url-shortener-5p7p.onrender.com/apidocs/
 
 3. For Shortening URL
 
-    Endpoint - https://url-shortener-5p7p.onrender.com/url/shorturl
+    Endpoint - https://url-shortener-jxrw.onrender.com/url/shorturl
    
     Method - POST
 
@@ -62,7 +63,7 @@ https://url-shortener-5p7p.onrender.com/apidocs/
 
 4. For Redirect
 
-    Endpoint - https://url-shortener-5p7p.onrender.com/url/redirect/:short
+    Endpoint - https://url-shortener-jxrw.onrender.com/url/redirect/:short
    
     Method - GET
 
@@ -70,7 +71,7 @@ https://url-shortener-5p7p.onrender.com/apidocs/
   
    ```
       "originalURL":"https://www.gurucool.life/"
-      "shortURL": "https://url-shortener-5p7p.onrender.com/url/redirect/GISOuB",
+      "shortURL": "https://url-shortener-jxrw.onrender.com/url/redirect/GISOuB",
 
    ```
 

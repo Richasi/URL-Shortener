@@ -14,22 +14,22 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.status(200).send("Welcome to URL Shortener");
+  res.status(200).send("URL Shortener");
 });
 
 const options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Welcome to URL Shortener Document",
+      title: "Welcome to URL Shortener ",
       version: "1.0.0",
     },
     servers: [
       {
-        url: "http://localhost:7070/",
+        url: "http://localhost:5070/",
       },
       {
-        url: "https://url-shortener-5p7p.onrender.com",
+        url: "https://url-shortener-jxrw.onrender.com",
       },
     ],
   },
