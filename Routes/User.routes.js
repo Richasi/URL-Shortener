@@ -7,6 +7,7 @@ const { UserModel } = require("../Models/User.schema");
 const UserRouter = Router();
 
 
+
 UserRouter.post("/signup", async (req, res) => {
   try {
     const { username, password } = req.body;

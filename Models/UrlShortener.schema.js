@@ -5,6 +5,7 @@ const UrlShortenerSchema = mongoose.Schema({
   shortURL: { type: String, unique: true },
 });
 
+
 const UrlShortenerModel = mongoose.model("urlShortener", UrlShortenerSchema);
 
 module.exports = {
