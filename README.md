@@ -6,7 +6,6 @@ This URL Shortener service allow user to register, login, shorten URL and redire
 
 https://url-shortener-jxrw.onrender.com/
 
-
 ## Tech Stack
 
 * Node.js
