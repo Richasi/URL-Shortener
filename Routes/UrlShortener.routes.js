@@ -30,24 +30,22 @@ URLRouter.post("/shorturl", async (req, res) => {
   }
 });
 
-
 URLRouter.get("/redirect/:short", async (req, res) => {
   try {
-    const short = req.params;
-    console.log(short);
-    const url = await UrlShortenerModel.findOne({
-      shortURL: short.short,
-    });
-    console.log(url);
+    const short = req.params.short; // Correctly extract the short URL parameter
+    console.log(short); // Log the short URL for debugging
+    const url = await UrlShortenerModel.findOne({ shortURL: short });
+    console.log(url); // Log the found URL for debugging
     if (url) {
       res.redirect(url.originalURL);
     } else {
-      res.status(400).send({ message: "Error in redirectinging" });
+      res.status(400).send({ message: "Error in redirecting" }); // Fixed typo
     }
   } catch (error) {
     res.status(500).send(error);
   }
 });
+
 
 
 module.exports = {
